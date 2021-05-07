@@ -7,8 +7,8 @@ public class Matmul {
         // parse args
         String firstMatrixInputPath = args[0];
         String secondMatrixInputPath = args[1];
-        String subSumOutputPath = args[2];
-        String sumOutputPath = args[3];
+        String subSumOutputPath = args[1]+"temp"+args[2];
+        String sumOutputPath = args[2];
 
         // run the first job
         String[] cellMultiplicationArgs = {firstMatrixInputPath, secondMatrixInputPath, subSumOutputPath};
